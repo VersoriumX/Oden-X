@@ -1,0 +1,16 @@
+[build]
+  publish = "dist" # Change this to your build output directory
+  command = "npm run build" # Change this to your build command
+
+[dev]
+  command = "npm start" # Command to run your app in development mode
+  port = 3000 # Port for local development
+
+[build.environment]
+  NODE_VERSION = "18.4.2" # Specify the Node.js version if needed
+  # Add any other environment variables your app needs
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
