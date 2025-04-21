@@ -19,7 +19,7 @@ def index():
 @app.route("/api/generate", methods=["POST"])
 def generate_api():
     if request.method == "POST":
-        if API_KEY == 'AIzaSyAwXIlgJMcXQqP2I6QlnIYDo8Gn46yEt6o':
+        if API_KEY == 'secrets.Google_AI_Api':
             return jsonify({ "error": 'Please add the AI API key. You can find instructions here <a href="https://aistudio.google.com/app/apikey">https://aistudio.google.com/AIzaSyAwXIlgJMcXQqP2I6QlnIYDo8Gn46yEt6o/</a>'})
         try:
             req_body = request.get_json()
