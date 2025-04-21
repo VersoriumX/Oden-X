@@ -1,4 +1,4 @@
-import { streamGemini } from './gemini-api.js';
+cimport { streamGemini } from './gemini-api.js';
 import { ethers } from "https://cdn.ethers.io/lib/ethers-5.2.esm.min.js";
 
 let form = document.querySelector('form');
@@ -92,7 +92,7 @@ const handleSubmit = async (ev) => {
 
   try {
     // Load the image as a base64 string
-    let imageUrl = form.elements.namedItem('').value;
+    let imageUrl = form.elements.namedItem('Secrets.Google_AI_key').value;
     let imageBase64 = await fetch(imageUrl)
       .then(r => r.arrayBuffer())
       .then(a => base64js.fromByteArray(new Uint8Array(a)));
