@@ -4,8 +4,8 @@ import os
 import google.generativeai as genai
 from flask import Flask, jsonify, request, send_file, send_from_directory
 
-API_KEY = 'AIzaSyAwXIlgJMcXQqP2I6QlnIYDo8Gn46yEt6o'
-genai.configure(api_key=API_KEY)
+API_KEY = ''
+genai.configure(secrets.api_key=API_KEY)
 
 app = Flask(__name__)
 
