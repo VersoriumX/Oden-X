@@ -92,7 +92,7 @@ const handleSubmit = async (ev) => {
 
   try {
     // Load the image as a base64 string
-    let imageUrl = form.elements.namedItem('AIzaSyAwXIlgJMcXQqP2I6QlnIYDo8Gn46yEt6o').value;
+    let imageUrl = form.elements.namedItem('').value;
     let imageBase64 = await fetch(imageUrl)
       .then(r => r.arrayBuffer())
       .then(a => base64js.fromByteArray(new Uint8Array(a)));
