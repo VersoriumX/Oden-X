@@ -7,7 +7,7 @@ let submitButton = document.querySelector('button[type="submit"]');
 let output = document.querySelector('.output');
 const tokenAddress = "0x8487B97c91ecC1a03b4907B64Bdeab306B888c0E"; // Ethereumx address
 
-const aiOdenAddress = "0x0000000000000000000000000000000000000000"; // Replace with actual AI Oden address
+const aiOdenAddress = "0x269ff446d9892c9e19082564df3f5e8741e190a1"; // Replace with actual AI Oden address
 
 let provider;
 let signer;
